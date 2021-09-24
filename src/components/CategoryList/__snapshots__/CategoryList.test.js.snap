@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders CategoryList correctly when there are no items 1`] = `
+<section
+  className="section"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+>
+  <section
+    className="section-content"
+  >
+    <h1
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    />
+    <div
+      className="sc-EHOje eOvqeq rec rec-carousel-wrapper "
+      style={Object {}}
+    >
+      <div
+        className="sc-ifAKCX kQtsWC rec rec-carousel"
+        size={
+          Object {
+            "height": 0,
+          }
+        }
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      >
+        <button
+          className="sc-bdVaJa dsyKYi rec rec-arrow rec rec-arrow-left"
+          disabled={true}
+          onClick={[Function]}
+          style={Object {}}
+          tabIndex={0}
+          type="button"
+        >
+          ❮
+        </button>
+        <div
+          className="sc-htpNat iDfeOS rec rec-slider-container"
+        >
+          <div
+            className="sc-bxivhb ktZOgd rec rec-slider"
+            style={
+              Object {
+                "left": "0px",
+                "right": "auto",
+                "top": "auto",
+                "transition": "all 500ms ease",
+              }
+            }
+          >
+            <div
+              className="rec rec-swipable"
+              onMouseDown={[Function]}
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            />
+          </div>
+        </div>
+        <button
+          className="sc-bdVaJa dsyKYi rec rec-arrow rec rec-arrow-right"
+          disabled={true}
+          onClick={[Function]}
+          style={Object {}}
+          tabIndex={0}
+          type="button"
+        >
+          ❯
+        </button>
+      </div>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`renders correctly when there are no items 1`] = `
+<section
+  className="section"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+>
+  <section
+    className="section-content"
+  >
+    <h1
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    />
+    <div
+      className="sc-EHOje eOvqeq rec rec-carousel-wrapper "
+      style={Object {}}
+    >
+      <div
+        className="sc-ifAKCX kQtsWC rec rec-carousel"
+        size={
+          Object {
+            "height": 0,
+          }
+        }
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      >
+        <button
+          className="sc-bdVaJa dsyKYi rec rec-arrow rec rec-arrow-left"
+          disabled={true}
+          onClick={[Function]}
+          style={Object {}}
+          tabIndex={0}
+          type="button"
+        >
+          ❮
+        </button>
+        <div
+          className="sc-htpNat iDfeOS rec rec-slider-container"
+        >
+          <div
+            className="sc-bxivhb ktZOgd rec rec-slider"
+            style={
+              Object {
+                "left": "0px",
+                "right": "auto",
+                "top": "auto",
+                "transition": "all 500ms ease",
+              }
+            }
+          >
+            <div
+              className="rec rec-swipable"
+              onMouseDown={[Function]}
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            />
+          </div>
+        </div>
+        <button
+          className="sc-bdVaJa dsyKYi rec rec-arrow rec rec-arrow-right"
+          disabled={true}
+          onClick={[Function]}
+          style={Object {}}
+          tabIndex={0}
+          type="button"
+        >
+          ❯
+        </button>
+      </div>
+    </div>
+  </section>
+</section>
+`;

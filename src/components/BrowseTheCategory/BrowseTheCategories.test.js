@@ -2,13 +2,12 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import BrowseTheCategories from './BrowseTheCategories';
 
-
-it('renders correctly when there are no items', () => {
+it('renders BrowseTheCategories correctly when there are no items', () => {
   const tree = renderer.create(<BrowseTheCategories />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it('renders correctly when there are multiple items', () => {
+it('renders BrowseTheCategories correctly when there are multiple items', () => {
   
     var categories = [
       {
