@@ -36,16 +36,16 @@ export default function BookDetails(props:any) {
 
       useEffect(() => {
        getBookDetails(id);
-        }, []);
+        }, [id]);
     return (
         <> 
         <Helmet>
         <title>Books Details</title>
         </Helmet>
         <Navigation/>
-        <section className="bookContainer"> 
-         <section className="bookContent">
-                        <h1 className="bookTilte">{BookDetails.title}</h1>
+        <section className="book-wrapper"> 
+         <section className="book-content">
+                        <h1>{BookDetails.title}</h1>
                     <Card sx={{ maxWidth: 345 ,objectFit: "fill"}}>
                 <CardMedia
                     component="img"
@@ -65,7 +65,6 @@ export default function BookDetails(props:any) {
                 </Card>
              </section>
              </section>
-
         <Footer/>
         </>
     )

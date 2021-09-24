@@ -2,7 +2,6 @@ import React from 'react'
 import './CategoryList.css'
 import Carousel from 'react-elastic-carousel';
 import {Link} from 'react-router-dom';
-import { Helmet } from "react-helmet";
 
 export default function CategoryList(props:any) {
 
@@ -40,7 +39,7 @@ export default function CategoryList(props:any) {
                     {items && items.length > 0 && items.map((item: IItem) =>
                         <div className="card" key={item.id}>
                             <Link to={`/book/${item.id}`}>
-                                <img src={item.image} alt="check"/>
+                                <img src={item.image} alt={`can't load ${item.title}`}/>
                                 <h4 style={{color: titleColor}} >{item.title}</h4>
                                 <p style={{color: pColor}}>BY {item.author}</p>
                                 <p style={{color: pColor}}>Reviewed By {item.reviewedBy}</p>

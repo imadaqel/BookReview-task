@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are multiple items 1`] = `
+<section
+  className="sc-bdVaJa hwOTrO"
+>
+  <section
+    className="sc-bwzfXH hDJlEA"
+  >
+    <h1
+      className="sc-htpNat dPDbWX"
+    >
+      Browse
+      <span
+        className="sc-bxivhb hfKSal"
+      >
+         Our Most Popular Categories
+      </span>
+    </h1>
+    <section
+      className="sc-ifAKCX iUhJXj"
+    />
+  </section>
+</section>
+`;
+
+exports[`renders correctly when there are no items 1`] = `
+<section
+  className="sc-bdVaJa hwOTrO"
+>
+  <section
+    className="sc-bwzfXH hDJlEA"
+  >
+    <h1
+      className="sc-htpNat dPDbWX"
+    >
+      Browse
+      <span
+        className="sc-bxivhb hfKSal"
+      >
+         Our Most Popular Categories
+      </span>
+    </h1>
+    <section
+      className="sc-ifAKCX iUhJXj"
+    />
+  </section>
+</section>
+`;

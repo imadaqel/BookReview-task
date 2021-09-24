@@ -13,7 +13,7 @@ export const SectionContent=styled.section`
         padding: 5rem 7rem;
     }
     @media ${device.mobileL} {
-        padding: 5rem 4rem;  
+        padding: 5rem 3rem;  
     }
 `
 export const CategoriesHeader=styled.h1`
@@ -80,8 +80,8 @@ export const CategoriesCardParg=styled.p`
 `
 export const CategoriesCardImg=styled.img`
     display: inline-block;
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         padding: 0;
     @media ${device.mobileS} {
     

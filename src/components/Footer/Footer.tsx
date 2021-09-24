@@ -5,9 +5,9 @@ function Footer() {
     return (
         <footer className="footer">
             <ul>
-                <li className="footer__section">
+                <li className="footer-section">
                     <h2>NAVIGATION</h2>
-                    <ul className="footer__nav">
+                    <ul className="footer-nav">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -23,25 +23,21 @@ function Footer() {
                         </li>
                     </ul>
                 </li>
-                <li className="footer__section footer__section_expanded">
+                <li className="footer-section footer-section_expanded">
                     <h2>Catagories</h2>
-                    <ul className="footer__nav">
+                    <ul className="footer-nav">
                         <li>
                             <a href="#">Art</a>
                         </li>
-
                         <li>
                             <a href="#">Biography</a>
                         </li>
-
                         <li>
                             <a href="#">Bussiness</a>
                         </li>
-
                         <li>
                             <a href="#">Chick</a>
                         </li>
-
                         <li>
                             <a href="#">Children</a>
                         </li>
@@ -102,9 +98,9 @@ function Footer() {
                         </li>
                     </ul>
                 </li>
-                <li className="footer__section">
+                <li className="footer-section">
                     <h2>FOLLOW US</h2>
-                    <ul className="footer__nav">
+                    <ul className="footer-nav">
                         <li>
                             <a href="#">Facebook</a>
                         </li>

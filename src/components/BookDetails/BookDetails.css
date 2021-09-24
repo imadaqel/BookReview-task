@@ -1,15 +1,32 @@
 
-.bookContainer{
+.book-wrapper{
    min-height: 100%;
-    /* background-color: #e9e3e3; */
 }
-.bookContent{
+.book-content{
     width:300px;
     margin:auto;
     margin-top:100px;
 }
-.bookTilte{
+.book-content >h1{
     text-align: center;
     font-size: 48px;
 }
+.css-o69gx8-MuiCardMedia-root {
+    width: 100%;
+    object-fit: cover;
+}
 
+@media screen and (min-width: 300px) and (max-width: 425px) {
+
+    .css-o69gx8-MuiCardMedia-root {
+        width: unset;
+        object-fit: revert;
+        margin: auto;
+        width: 66%;
+        width: 200px;
+        height: 200px;
+    }
+    .css-ql5yow-MuiPaper-root-MuiCard-root {
+        max-width: 201px;
+    }
+}
