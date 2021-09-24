@@ -7,28 +7,30 @@
     margin: auto;
     padding: 5rem 0;
 }
-
 .section-content > h1 {
     margin: 0;
     padding: 0;
 }
-
-
 .rec.rec-arrow.rec-arrow-left {
+    background-color: white;
     position: absolute;
     left: 20rem;
     border-radius: 0
 }
 .rec.rec-arrow.rec-arrow-right {
+    background-color: white;
     position: absolute;
     right: 20rem;
     border-radius: 0
+}
+.bdPPYr {
+    color: #c1bcbc;
 }
 .rec.rec-slider-container {
     margin: 0;
 }
 .rec.rec-carousel-wrapper {
-    margin: 1rem 0 0;
+    margin: 2rem 0 0;
 }
 .card {
     display: flex;
@@ -41,7 +43,9 @@
 }
 .card a > p {
     margin: 0;
-    font-size: x-small
+    color: #94a64b;
+    text-transform: uppercase;
+    font-size: x-small;
 }
 .card a > img  {
     width: 13rem;

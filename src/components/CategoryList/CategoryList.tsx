@@ -9,7 +9,6 @@ export default function CategoryList(props:any) {
         width: number;
         itemsToShow: number;
     }
-
     interface IItem {
         id: number;
         image: string;
@@ -17,7 +16,6 @@ export default function CategoryList(props:any) {
         author: string;
         reviewedBy: string;
     }
-
     const title:string = props.title;
     const bgColor:string = props.bgColor;
     const titleColor:string = props.titleColor;
@@ -29,13 +27,11 @@ export default function CategoryList(props:any) {
         {width: 430, itemsToShow: 3},
         {width: 800, itemsToShow: 5}
     ]
-
     return (
-    
         <section className={"section"} style={{backgroundColor: bgColor}}>
             <section className="section-content">
                 <h1 style={{color: titleColor}}>{title}</h1>
-                <Carousel breakPoints={breakPoints} isRTL={false}>
+                <Carousel breakPoints={breakPoints} isRTL={false} pagination={false}>
                     {items && items.length > 0 && items.map((item: IItem) =>
                         <div className="card" key={item.id}>
                             <Link to={`/book/${item.id}`}>

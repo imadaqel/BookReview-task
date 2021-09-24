@@ -5,7 +5,7 @@ import {CategoriesWrapper,SectionContent,CategoriesHeader,SectionContentSpan,Cat
 
 export default function BrowseTheCategories(props: any) {
     const Categories: IItem[] = props.Categories;
-    console.log(props)
+    console.log(props.Categories)
     interface IItem {
         id: number;
         image: string;
