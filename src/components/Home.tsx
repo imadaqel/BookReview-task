@@ -1,13 +1,13 @@
 import React, {useState, useEffect, lazy, Suspense} from 'react';
-import BrowseTheCategories from "./BrowseTheCategories";
-
+import BrowseTheCategories from "./BrowseTheCategory/BrowseTheCategories";
 import Navigation from './Header/Navigation';
+import { Helmet } from "react-helmet";
 
 const LazyNonfictionCat = lazy(() => import('./CategoryList/CategoryList'));
 const LazyFictionCat = lazy(() => import('./CategoryList/CategoryList'));
 const LazyChildrenCat = lazy(() => import('./CategoryList/CategoryList'));
 const LazySelfImprovementCat = lazy(() => import('./CategoryList/CategoryList'));
-const LazyFooter = lazy(() => import('./Footer'));
+const LazyFooter = lazy(() => import('./Footer/Footer'));
 
 export default function Home() {
     const [Categories, setCategories] = useState([]);
@@ -50,16 +50,22 @@ export default function Home() {
     }, []);
 
     return (
-        <div className={"main-content"}>
-            <Navigation/>
-            <BrowseTheCategories Categories={Categories}/>
-            <Suspense fallback={<h1>Still Loading…</h1>}>
-                <LazyNonfictionCat items={nonfictionCat} title={'Nonfiction'} titleColor={'black'} bgColor={"#f6f6f6"} pColor={"#909090"}/>
-                <LazyFictionCat items={fictionCat}  title={'Fiction'}  titleColor={'white'} bgColor={"#1a1a1a"} pColor={"green"}/>
-                <LazyChildrenCat items={childrenCat}  title={'Children'} titleColor={'black'} bgColor={"#f6f6f6"} pColor={"#909090"}/>
-                <LazySelfImprovementCat items={self_improvementCat} titleColor={'white'} title={'Self Improvement'} bgColor={"#3e3e3e"} pColor={"green"}/>
-                <LazyFooter/>
-            </Suspense>
-        </div>
+        <> 
+        <Helmet>
+        <title>Books Reviews</title>
+        </Helmet>
+            <div className={"main-content"}>
+                <Navigation/>
+                <BrowseTheCategories Categories={Categories}/>
+                <Suspense fallback={<h1>Still Loading…</h1>}>
+                    <LazyNonfictionCat items={nonfictionCat} title={'Nonfiction'} titleColor={'black'} bgColor={"#f6f6f6"} pColor={"#909090"}/>
+                    <LazyFictionCat items={fictionCat}  title={'Fiction'}  titleColor={'white'} bgColor={"#1a1a1a"} pColor={"green"}/>
+                    <LazyChildrenCat items={childrenCat}  title={'Children'} titleColor={'black'} bgColor={"#f6f6f6"} pColor={"#909090"}/>
+                    <LazySelfImprovementCat items={self_improvementCat} titleColor={'white'} title={'Self Improvement'} bgColor={"#3e3e3e"} pColor={"green"}/>
+                    <LazyFooter/>
+                </Suspense>
+            </div>
+        </>
+
     )
 }

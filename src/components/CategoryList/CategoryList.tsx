@@ -2,6 +2,7 @@ import React from 'react'
 import './CategoryList.css'
 import Carousel from 'react-elastic-carousel';
 import {Link} from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 export default function CategoryList(props:any) {
 
@@ -31,6 +32,7 @@ export default function CategoryList(props:any) {
     ]
 
     return (
+    
         <section className={"section"} style={{backgroundColor: bgColor}}>
             <section className="section-content">
                 <h1 style={{color: titleColor}}>{title}</h1>
@@ -50,4 +52,3 @@ export default function CategoryList(props:any) {
         </section>
     )
 }
-//  export default NonfictionCat

@@ -1,11 +1,13 @@
-import Navigation from './Header/Navigation';
-import Footer from './Footer';
+import Navigation from '../Header/Navigation';
+import Footer from '../Footer/Footer';
 import React,{useState,useEffect} from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import './BookDetails.css'
+import './BookDetails.css';
+import { Helmet } from "react-helmet";
+
 export default function BookDetails(props:any) {
     console.log(props)
     const id:number=props.match.params.id;
@@ -36,7 +38,10 @@ export default function BookDetails(props:any) {
        getBookDetails(id);
         }, []);
     return (
-        <>
+        <> 
+        <Helmet>
+        <title>Books Details</title>
+        </Helmet>
         <Navigation/>
         <section className="bookContainer"> 
          <section className="bookContent">

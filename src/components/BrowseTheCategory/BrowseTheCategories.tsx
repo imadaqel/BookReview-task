@@ -1,7 +1,7 @@
 import React from 'react'
 // import './BrowseTheCategories.css';
 import {CategoriesWrapper,SectionContent,CategoriesHeader,SectionContentSpan,CategoriesMain,CategoriesCard,
-    CategoriesCardImg,CategoriesCardContent,CategoriesMainTitle,CategoriesCardParg} from '../StyledComponents/BrowseTheCategoriesStyle'
+    CategoriesCardImg,CategoriesCardContent,CategoriesMainTitle,CategoriesCardParg} from './BrowseTheCategoriesStyle'
 
 export default function BrowseTheCategories(props: any) {
     const Categories: IItem[] = props.Categories;

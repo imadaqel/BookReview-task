@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BookDetails from './BookDetails';
+import BookDetails from './BookDetails/BookDetails';
 it('renders correctly when there are no items', () => {
   // const match={match:{
   //   params:{

@@ -46,7 +46,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 300px;
+    max-height: 295px;
 }
 
 .footer__nav > li {
@@ -82,7 +82,7 @@
     padding: 4rem 7rem;
 }
 .footer__section.footer__section_expanded {
-    flex: 2.5;
+    flex: 4;
 }
 
 }

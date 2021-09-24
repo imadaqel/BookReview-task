@@ -1,4 +1,4 @@
-import BookDetails from './components/BookDetails'
+import BookDetails from './components/BookDetails/BookDetails'
 import './App.css';
 import {BrowserRouter, Route} from "react-router-dom";
 import Home from "./components/Home"
